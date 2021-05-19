@@ -9,13 +9,14 @@ categories:
   - Python
 ---
 
-I'm happy to announce that I'm launching my ebook, [Music for Geeks and Nerds][1]. It
-uses programming and mathematics to teach same aspects of music and it answers
-long-standing questions such as why Eb and D# are different, and which sequence _sounds
-_better, Pascal's triangle or Fibonacci (place your bets). I wrote it because I have
-friends who are programmers, computer scientists, or engineers and they are always asking
-me for book recommendations to learn more about music. There are good books out there,
-but I always feel they present things in a prescriptive, "magical", or worse, artsy way.
+I'm happy to announce that I'm launching my ebook, [Music for Geeks and
+Nerds][1]. It uses programming and mathematics to teach same aspects of music
+and it answers long-standing questions such as why Eb and D# are different, and
+which sequence _sounds_ better, Pascal's triangle or Fibonacci (place your
+bets). I wrote it because I have friends who are programmers, computer
+scientists, or engineers and they are always asking me for book recommendations
+to learn more about music. There are good books out there, but I always feel
+they present things in a prescriptive, "magical", or worse, artsy way.
 
 <!--more-->
 
@@ -29,7 +30,7 @@ I find that hackers and programmers can learn the first two layers very quickly 
 result, they can have a better understanding of the social layer. In the book I explain
 musical concepts in English with a corresponding implementation in Python, using the
 [Pyknon][4] music library. By implementing musical concepts in a programming language we
-can have a more precise way to describe and understand them. 
+can have a more precise way to describe and understand them.
 
 For instance, some music students have problems to transpose notes mentally. However, it
 becomes easy once you realize that transposition is nothing more than the sum of a note
@@ -42,7 +43,7 @@ I wrote the book using the [reStructuredText][6] markup and I used [Sphinx][7] t
 generate the following formats: black & white pdf (for the printed version), color pdf,
 mobi for kindle, epub, and html (for previewing). My favorite feature in Sphinx is the
 `literalinclude` directive with the `pyobject` option to include the source code of
-functions and methods. 
+functions and methods.
 
 My second favorite feature is the possibility of creating custom directives. For example,
 I created a directive to insert the source code and the result of its execution in a

@@ -8,7 +8,7 @@ layout: default
       <div class="col p-4 d-flex flex-column position-static">
 	<h3 class="mb-0">Modern Python Development with PyCharm</h3>
 	<p class="card-text mb-auto">
-	  Become more productive with the best Python IDE.
+	  {{ site.data.descriptions["pycharm"] }}
 	</p>
 	<a href="#" class="stretched-link">Learn more &#8230;</a>
       </div>
@@ -23,7 +23,7 @@ layout: default
       <div class="col p-4 d-flex flex-column position-static">
 	<h3 class="mb-0">Music For Geeks & Nerds</h3>
 	<p class="mb-auto">
-	  Learn more about music with Python and a little bit of math.
+	  {{ site.data.descriptions["mfgan"] }}
 	</p>
 	<a href="#" class="stretched-link">Learn more &#8230;</a>
       </div>
@@ -49,9 +49,7 @@ layout: default
     <div class="p-4 mb-3 bg-light rounded">
       <h4>About</h4>
       <p class="mb-0">
-	Customize this section to tell your visitors a little bit
-	about your publication, writers, content, or something else
-	entirely. Totally up to you.
+	{{ site.data.descriptions["about"] }}
       </p>
     </div>
 
