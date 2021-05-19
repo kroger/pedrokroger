@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+	<h3 class="mb-0">Modern Python Development with PyCharm</h3>
+	<p class="card-text mb-auto">
+	  Become more productive with the best Python IDE.
+	</p>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+	<img alt="pycharm book cover" src="assets/img/pycharm-book-cover.png" width="200" />
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+	<h3 class="mb-0">Music For Geeks & Nerds</h3>
+	<p class="mb-auto">
+	  Learn more about music with Python and a little bit of math.
+	  Get your free copy.
+	</p>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+	<img alt="mfgan cover" src="assets/img/mfgan-cover.png" width="200" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+    {%- for post in site.posts -%}
+    <article class="blog-post">
+      <h2 class="blog-post-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+      {{ post.excerpt }}
+      <a class="post-link" href="{{ post.url | relative_url }}">Continue Reading &#8230;</a>
+    </article>
+    {%- endfor -%}
+  </div>
+
+  <div class="col-md-4">
+    <div class="position-sticky" style="top: 2rem;">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4>About</h4>
+        <p class="mb-0">
+	  Customize this section to tell your visitors a little bit
+	  about your publication, writers, content, or something else
+	  entirely. Totally up to you.
+	</p>
+      </div>
+
+      <div class="p-4">
+        <h4>Archives</h4>
+      </div>
+    </div>
+  </div>
+</div>

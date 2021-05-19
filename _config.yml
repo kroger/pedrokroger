@@ -16,3 +16,4 @@ exclude:
   - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
+  - assets/main.scss
