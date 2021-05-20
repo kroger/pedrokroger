@@ -1,7 +1,7 @@
 ---
 title: Printing Python Code With LaTeX
 author: Pedro Kroger
-type: post
+layout: post
 date: 2011-04-10T14:13:58+00:00
 url: /printing-python-code-latex/
 categories:

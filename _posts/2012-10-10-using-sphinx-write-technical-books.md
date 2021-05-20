@@ -1,7 +1,7 @@
 ---
 title: Using Sphinx to Write Technical Books
 author: Pedro Kroger
-type: post
+layout: post
 date: 2012-10-10T03:35:56+00:00
 url: /using-sphinx-write-technical-books/
 categories:

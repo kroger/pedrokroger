@@ -1,7 +1,7 @@
 ---
 title: PyCharm as the Ultimate Python Debugger
 author: Pedro Kroger
-type: post
+layout: post
 date: 2015-03-05T15:07:44+00:00
 url: /python-debugger/
 categories:

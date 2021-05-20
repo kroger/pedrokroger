@@ -1,7 +1,7 @@
 ---
 title: SICP in Python
 author: Pedro Kroger
-type: post
+layout: post
 date: 2011-08-31T14:29:21+00:00
 url: /sicp-python/
 categories:

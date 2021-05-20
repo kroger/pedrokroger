@@ -1,7 +1,7 @@
 ---
 title: 'My ebook: Music for Geeks and Nerds'
 author: Pedro Kroger
-type: post
+layout: post
 date: 2012-07-26T00:00:07+00:00
 url: /music-for-geeks-and-nerds/
 categories:

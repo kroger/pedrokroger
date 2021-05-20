@@ -1,7 +1,7 @@
 ---
 title: Harmonizing Every Scale With Python
 author: Pedro Kroger
-type: post
+layout: post
 date: 2011-09-29T13:55:39+00:00
 url: /harmonizing-every-scale-python/
 dsq_thread_id:

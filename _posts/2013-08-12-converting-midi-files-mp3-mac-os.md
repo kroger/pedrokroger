@@ -1,7 +1,7 @@
 ---
 title: Converting MIDI Files to MP3 on the Mac OS
 author: Pedro Kroger
-type: post
+layout: post
 date: 2013-08-12T15:02:28+00:00
 url: /converting-midi-files-mp3-mac-os/
 categories:

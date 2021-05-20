@@ -1,7 +1,7 @@
 ---
 title: 'SICP in Python: 1.1 The Elements of Programming'
 author: Pedro Kroger
-type: post
+layout: post
 date: 2011-09-01T14:19:58+00:00
 url: /sicp-python-1-1-elements-programming/
 categories:

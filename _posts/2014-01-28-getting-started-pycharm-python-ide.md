@@ -1,7 +1,7 @@
 ---
 title: How to Get Started with PyCharm and Have a Productive Python IDE
 author: Pedro Kroger
-type: post
+layout: post
 date: 2014-01-28T22:55:05+00:00
 url: /getting-started-pycharm-python-ide/
 categories:
@@ -157,7 +157,7 @@ to the Program, the Parameters (in this case we can get the full file name with
 You can assign it to a shortcut:
 
 ![](/img/2014-01/pycharm-new-shortcut.png)
-  
+
 ![](/img/2014-01/pycharm-select-keybinding.png)
 
 And now it’s available from the menu as well.
@@ -442,7 +442,7 @@ As you noticed, PyCharm uses one tab per file:
 To switch to tabs we can use the commands Select Next Tab and Select Previous Tab. They
 are bound to Control-→ and Control-← by default, but OS X uses these keys, so I rebind
 them to Control-⌘-N
-  
+
 and Control-⌘-P (I use the same shortcuts to switch tabs in the Terminal).
 
 One more direct approach to go to a tab is to use Navigate→File as we’ve seen, or

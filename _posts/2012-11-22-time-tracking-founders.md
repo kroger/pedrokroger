@@ -1,7 +1,7 @@
 ---
 title: Time Tracking for Founders
 author: Pedro Kroger
-type: post
+layout: post
 date: 2012-11-22T11:04:22+00:00
 url: /time-tracking-founders/
 categories:
