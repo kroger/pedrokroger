@@ -8,9 +8,16 @@ url: "https://pedrokroger.net"
 twitter_username: pedrokroger1
 github_username:  kroger
 
+toc:
+  max_level: 2
+  list_class: "nav flex-column toc"
+  item_class: nav-item
+#  item_prefix: item- # Default: "toc-":
+
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
 
 exclude:
   - .jekyll-cache/

@@ -2,6 +2,7 @@
 title: How to Get Started with PyCharm and Have a Productive Python IDE
 author: Pedro Kroger
 layout: post
+toc: true
 date: 2014-01-28T22:55:05+00:00
 url: /getting-started-pycharm-python-ide/
 categories:
