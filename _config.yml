@@ -8,10 +8,13 @@ url: "https://pedrokroger.net"
 twitter_username: pedrokroger1
 github_username:  kroger
 
+kramdown:
+  input: GFM
+
 toc:
   min_level: 1
   max_level: 2
-  list_class: "nav flex-column toc"
+  list_class: "nav flex-column nav-toc"
   item_class: nav-item
 
 plugins:
