@@ -14,9 +14,11 @@ layout: default
 
   </article>
 
+  {% if page.toc %}
   <div class="col-md-3 offset-md-1 bd-toc">
     <strong class="d-block h6 my-2 pb-2 border-bottom">Contents</strong>
     {% toc %}
   </div>
+  {% endif %}
 
 </div>
