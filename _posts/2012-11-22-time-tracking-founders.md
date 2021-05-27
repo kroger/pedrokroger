@@ -2,6 +2,7 @@
 title: Time Tracking for Founders
 author: Pedro Kroger
 layout: post
+toc: true
 date: 2012-11-22T11:04:22+00:00
 url: /time-tracking-founders/
 categories:
@@ -13,7 +14,7 @@ How many hours have you worked on your Minimum Viable Product (MVP) in the past 
 How many hours have you worked on your lifestyle business this week? How long does it
 take to write a book? I’m able to give reasonable answers to these questions because I
 track my time.
-  
+
 Hackers turned founders rightfully track many things about their products (downloads,
 page visits, conversions, etc) but, surprisingly, many of them don't track where they
 spend their time.
@@ -22,7 +23,7 @@ spend their time.
 
 Of course it’s easy to fool yourself thinking that working more hours means accomplishing
 more. Working 10 hours on something doesn’t
-  
+
 necessarily mean accomplishing twice of working 5 hours. But I believe that time is a
 valuable metric that can provide you with significant insights. I track what I call
 "focused time". If I stop working on my task to read my email, I'll stop the stopwatch.
