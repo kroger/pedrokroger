@@ -1,5 +1,9 @@
-- Top navbar doesn't list when small
-- Mfgan page
-- Pycharm book page
-- Compositions page
-- About page
+- Fix navbar button when hidden
+- Add Mfgan page
+- Add Pycharm book page
+- Add Compositions page
+- Add About page
+- Link to books in posts (end of post), maybe sidebar
+- Analytics
+- Text about me in sidebar
+- Link to twitter, etc
