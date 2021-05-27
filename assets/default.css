@@ -62,7 +62,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-img {
+/* Use fixed width for images in posts */
+p img {
   width: 80%;
   height: auto;
 }
