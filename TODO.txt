@@ -1,0 +1,5 @@
+- Top navbar doesn't list when small
+- Mfgan page
+- Pycharm book page
+- Compositions page
+- About page
