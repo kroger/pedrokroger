@@ -17,8 +17,6 @@ not a zero sum game. I’ve been using Emacs for 15+ years and at one point I us
 read my [email][1], [browse the web][2], and [make coffee][3] (haven’t we all?). But
 today I find that I’m more productive by using the right tool for the right job.
 
-<!--more-->
-
 Powerful editors like Emacs and Vim are fantastic. I find it puzzling that some editors
 or IDEs perform basic operations such as search and replace clunkily while Vim and Emacs
 get it just right.
@@ -70,7 +68,7 @@ the View menu):
 ![](/img/2014-01/pycharm-appearance2.png)
 
 
-## Virtualenv and the Python Interpreter
+## The Python Interpreter
 
 You can create new projects with File→New Project or open an existing project with
 File→Open Directory. PyCharm supports many types of Python projects such as Django or
@@ -268,7 +266,7 @@ powerful and I use it all the time.
 
 ![](/img/2014-01/pycharm-find-action.png)
 
-## Code completion
+## Code Completion
 
 Completion in PyCharm is top notch. By default PyCharm will suggest things while you are
 typing:
@@ -318,7 +316,7 @@ expression “dir(r)”.
 ![](/img/2014-01/pycharm-completion-debug.png)
 
 
-## Access to documentation
+## Access to Documentation
 
 PyCharm has three ways to access documentation: Quick Definition, Quick Documentation,
 External Documentation, and Parameter Info. You can access them from the View menu or
@@ -347,7 +345,7 @@ The external documentation works out-of-the-box with Python (of course), PyQt4, 
 gtk, wx, numpy, scipy, and kivy and you can add the path for external documentation in
 Settings→Python External Documentation.
 
-## Code quality
+## Code Quality
 
 PyCharm checks if your code conforms to PEP8 while you are typing. It’ll let you know if
 you have too many spaces or blank lines, if you are using underscores instead of
@@ -356,7 +354,7 @@ pylint as an external tool][60], as well.
 
 ![](/img/2014-01/pycharm-pep8.png)
 
-## Finding your way in the source code
+## Navigation Commands
 
 PyCharm’s power starts when you master its navigation commands. It can jump to classes,
 functions, and so on. You can jump to the definition of a class, method, function, or

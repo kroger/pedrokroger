@@ -19,8 +19,6 @@ Hackers turned founders rightfully track many things about their products (downl
 page visits, conversions, etc) but, surprisingly, many of them don't track where they
 spend their time.
 
-<!--more-->
-
 Of course it’s easy to fool yourself thinking that working more hours means accomplishing
 more. Working 10 hours on something doesn’t
 
@@ -108,7 +106,7 @@ One thing that I like about Hamster is that it shows some basic information on t
 
 ![](/img/2012-11/hamster-full.png)
 
-## Manual vs. Automatic Time Tracking
+## Manual vs. Automatic
 
 Automatic time tracking programs such as [RescueTime][4] are great, but they don't help me to answer the questions I want. These programs work by recording how long you stay in one program or website. This is great to find your major distractions, but one major problem is that one program or website may have multiple uses. For example, watching videos on Youtube can be a productive task (lectures, screencasts, tutorials) that is part of a project or a plain distraction (kittens videos FTW!). However, applications like RescueTime will mark both as distractions.
 
