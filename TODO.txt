@@ -1,5 +1,3 @@
 - Fix navbar button when hidden
 - Link to books in posts (end of post), maybe sidebar
-- Analytics
-- Text about me in sidebar
 - Link to twitter, etc
