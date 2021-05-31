@@ -24,11 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Patua One', "Helvetica Neue", "Verdana", sans-serif;
 }
 
-h1.post-title {
-  padding-bottom: .7em;
-}
-
-h2, h3 {
+h1, h2, h3 {
   padding-top: 1em;
   padding-bottom: .7em;
 }
