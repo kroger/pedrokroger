@@ -4,20 +4,6 @@ layout: default
 
 
 <div class="row my-4">
-  <div class="col-md-6">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-card">
-      <div class="col p-4 d-flex flex-column position-static">
-	<h3 class="card-title mb-0">Modern Python Development with PyCharm</h3>
-	<p class="card-text mb-auto">
-	  {{ site.data.descriptions["pycharm"] }}
-	</p>
-	<a href="#" class="stretched-link">Learn more &#8230;</a>
-      </div>
-      <div class="col-auto d-none d-lg-block">
-	<img alt="pycharm book cover" src="img/pycharm-book-cover.png" width="200" />
-      </div>
-    </div>
-  </div>
 
   <div class="col-md-6">
     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-card">
@@ -26,10 +12,25 @@ layout: default
 	<p class="mb-auto">
 	  {{ site.data.descriptions["mfgan"] }}
 	</p>
-	<a href="#" class="stretched-link">Learn more &#8230;</a>
+	<a href="/mfgan/" class="stretched-link">Learn more &#8230;</a>
       </div>
       <div class="col-auto d-none d-lg-block">
 	<img alt="mfgan cover" src="img/mfgan-cover.png" width="200" />
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-card">
+      <div class="col p-4 d-flex flex-column position-static">
+	<h3 class="card-title mb-0">Modern Python Development with PyCharm</h3>
+	<p class="card-text mb-auto">
+	  {{ site.data.descriptions["pycharm"] }}
+	</p>
+	<a href="/pycharm-book/" class="stretched-link">Learn more &#8230;</a>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+	<img alt="pycharm book cover" src="img/pycharm-book-cover.png" width="200" />
       </div>
     </div>
   </div>
@@ -48,14 +49,16 @@ layout: default
 
   <div class="col-md-4">
     <div class="p-4 mb-3 bg-light rounded">
-      <h4>About</h4>
+      <h4>Dr. Pedro Kroger</h4>
       <p class="mb-0">
 	{{ site.data.descriptions["about"] }}
       </p>
     </div>
 
-    <div class="p-4">
-      <h4>Archives</h4>
-    </div>
+    <!--
+	 <div class="p-4">
+	 <h4>Archives</h4>
+	 </div>
+    -->
   </div>
 </div>

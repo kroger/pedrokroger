@@ -3,8 +3,3 @@
 - Analytics
 - Text about me in sidebar
 - Link to twitter, etc
-
-- Add Mfgan page
-- Add Pycharm book page
-- Add Compositions page
-- Add About page
