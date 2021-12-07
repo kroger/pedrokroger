@@ -24,9 +24,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Patua One', "Helvetica Neue", "Verdana", sans-serif;
 }
 
-h1, h2, h3 {
-  padding-top: 1em;
-  padding-bottom: .7em;
+time.post-time {
+  font-style: italic;
 }
 
 h3.card-title {

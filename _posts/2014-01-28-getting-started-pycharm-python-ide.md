@@ -21,7 +21,6 @@ today I find that I’m more productive by using the right tool for the right jo
   This article is very old and probably out-of-date. Please check Pycharm's documentation.
 </div>
 
-
 Powerful editors like Emacs and Vim are fantastic. I find it puzzling that some editors
 or IDEs perform basic operations such as search and replace clunkily while Vim and Emacs
 get it just right.
