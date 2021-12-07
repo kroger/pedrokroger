@@ -35,11 +35,9 @@ disabled:
 
 {% img run-disabled.png 80% %}
 
-
 Some items will be disabled in the *Run* menu as well:
 
 {% img run-menu.png 80% %}
-
 
 To run a script for the first time, we need to either create a configuration (*Run→Edit
 Configurations&hellip;*) or ask PyCharm to run the current file by going to
@@ -49,21 +47,17 @@ PyCharm creates a new configuration named `analysis`:
 
 {% img run-dialog.png 80% %}
 
-
 PyCharm will run the file and show a tool window with the results, if any.
 
 {% img run-running.png 80% %}
-
 
 The Run tool window has many buttons to help us deal with the running script. We can do
 things like pause, stop, and rerun the script and move up and down the stack trace.
 
 {% img run-icons-legend.png 80% %}
 
-
 The following table summarizes the main actions. The [manual][3] has
 a complete description.
-
 
 <table class="docutils" border="1">
   <colgroup> <col width="25%" /> <col width="28%" /> <col width="47%" /> </colgroup> <tr class="row-odd">
@@ -231,19 +225,16 @@ modifications to a sub-module, for instance.
 
 {% img run-menu-analysis.png 80% %}
 
-
 After we run the script for the first time, the related commands in the menubar will be
 available, and we can choose the script to run there:
 
 {% img run-analysis-menubar.png 80% %}
-
 
 PyCharm will create a new tab every time we run a script. If we don’t close the previous
 tab we may end up with many different tabs, so make sure you close each tab after
 running, and are, in fact, on the right tab.
 
 {% img run-tabs.png 80% %}
-
 
 ### New Configuration
 
@@ -255,19 +246,16 @@ each type.
 
 {% img run-new-configuration.png 80% %}
 
-
 We can choose the script to run, passing parameters if necessary, the Python interpreter,
 and the working directory. We can also launch an external tool before running the script,
 which is great if we need to do things like data pre-processing.
 
 {% img run-new-configuration-setup.png 80% %}
 
-
 In the Logs tab we can add log files to be shown in PyCharm’s console during the script
 execution or save the console output to a file.
 
 {% img run-with-log.png 80% %}
-
 
 Naturally, we can have multiple configurations; we can switch between them by going to
 *Run→Run&hellip; (⌥-C-r, A-C-r)* and picking the one we want.
@@ -286,12 +274,10 @@ like running code.
 
 {% img run-menu-analysis.png 80% %}
 
-
 Similarly to the `Run` command, the menubar will now be enabled and we can choose the
 script to debug by clicking on the insect icon.
 
 {% img debug-toolbar.png 80% %}
-
 
 One of the main differences between running and debugging a script is that in debugging
 we want to define breakpoints. In PyCharm, a breakpoint must be on a line with working
@@ -300,7 +286,6 @@ by clicking on the gutter on the left.
 
 {% img debug-breakpoint.png 80% %}
 
-
 We can also create a temporary breakpoint by Alt-clicking on the gutter. As the name
 suggests, a temporary breakpoint will be removed after being hit. Notice that the
 temporary breakpoint icon is different from the regular one. Check the [manual][4] for
@@ -308,13 +293,11 @@ more information about breakpoint icons.
 
 {% img debug-temp-breakpoint.png 80% %}
 
-
 PyCharm’s debug tool window has everything we expect in a graphical debugger. From here
 we can navigate the call stack and inspect the data available in each stack frame. We can
 keep an eye on some variables by adding them to the watch list.
 
 {% img debug-view.png 80% %}
-
 
 The debug tool window has many of the buttons we have seen in the Run tool window,
 allowing us to pause, stop, and rerun the script. In addition, we can view the
@@ -323,18 +306,15 @@ breakpoints—also available in *Run→View Breakpoints&hellip; (⌘-S-F8, S-C-F
 
 {% img debug-icons-legend.png 80% %}
 
-
 The icons in the top right corner, allowing us to step in and out of the program, are the
 ones we will use the most:
 
 {% img debug-step-icons.png 80% %}
 
-
 In the following image, we can see each icon with its name. The table below shows the
 name, shortcut, and description for each icon.
 
 {% img step-icons-legend.png 80% %}
-
 
 <table class="docutils" border="1">
   <colgroup> <col width="25%" /> <col width="28%" /> <col width="47%" /> </colgroup> <tr class="row-odd">
@@ -465,29 +445,24 @@ or expressions.
 
 {% img debug-list-breakpoints.png 80% %}
 
-
 One way to quickly edit a breakpoint is to right-click on the breakpoint on the gutter. A
 popup will allow us to enable the breakpoint and add a condition.
 
 {% img debug-condition.png 80% %}
 
-
 We can also see the breakpoints by selecting the Favorites Tool *(⌘-2, A-2)*.
 
 {% img debug-favorites.png 80% %}
-
 
 A quick way to disable a breakpoint is by clicking on it with the Alt key. The breakpoint
 icon will change.
 
 {% img debug-disable1.png 80% %}
 
-
 Another way to disable a breakpoint is by right-clicking on it and unchecking the first
 option (“Line 93 in analysis.py enabled” in the following example).
 
 {% img debug-disable2.png 80% %}
-
 
 Besides defining breakpoints when a line of code is reached, we can define a breakpoint
 that is triggered when an exception is thrown. To add an exception breakpoint, we go to
@@ -496,23 +471,19 @@ after clicking the + button.
 
 {% img debug-exception-breakpoint.png 80% %}
 
-
 We need to include the exception class by searching for its name. The search field works
 with both built-in and custom exception classes.
 
 {% img debug-select-class-exception.png 80% %}
 
-
 Our new exception now appears on the list, where we can customize it.
 
 {% img debug-new-exception.png 80% %}
-
 
 In most cases, we want to activate the breakpoint when the exception is raised (the
 default is to activate the breakpoint when the exception terminates):
 
 {% img debug-new-exception-detail.png 80% %}
-
 
 Having configured an exception breakpoint, PyCharm will create the breakpoint
 automatically when the exception is raised (`ChoralException`, in our example). Notice
@@ -529,11 +500,9 @@ Python Prompt icon.
 
 {% img debug-python-prompt.png 80% %}
 
-
 Now we can use the prompt to inspect and change the variables in the current scope.
 
 {% img debug-python-prompt2.png 80% %}
-
 
 ### Evaluating Expressions
 
@@ -543,11 +512,9 @@ expression.
 
 {% img debug-evaluate-expression1.png 80% %}
 
-
 As expected, we can use any variable in the current scope:
 
 {% img debug-evaluate-expression2.png 80% %}
-
 
 If we select the Code Fragment Mode button, we can add multiple lines of code. Completion
 works here as usual.
@@ -562,17 +529,14 @@ cursor over a variable name. PyCharm will show the variable name and its value.
 
 {% img debug-quick-variable.png 80% %}
 
-
 And, as expected, we can inspect and set a variable value by choosing the correct option
 in the popup menu on the Variables pane.
 
 {% img debug-inspect-variable.png 80% %}
 
-
 The same apply to watched variables; we can edit and inspect them by using the popup menu.
 
 {% img debug-inspect-watch.png 80% %}
-
 
 ### Remote Debugging
 
