@@ -37,11 +37,11 @@ usepackage{listings}
 
 The [beramono][2] package is a version of Bitstream Vera Mono modified to work with TeX. Without it we'll get the default LaTeX mono font:
 
-![](/img/2011-04/code-ugly1.png)
+{% img code-ugly1.png 90% %}
 
 But I like Bitstream Vera better (it looks even better on paper):
 
-![](/img/2011-04/code-pretty1.png)
+{% img code-pretty1.png 90% %}
 
 Listings has support for Python out-of-the-box and has lots of options and features
 (check the [manual][3] to see what listings can do). These are the options I like to
@@ -66,7 +66,7 @@ creating a new page at that point. Sometimes I put some line feed characters in 
 so I can do things like [narrowing to a page][4] in Emacs. Emacs shows line feed
 characters as `^L`, as you can see here:
 
-![](/img/2011-04/emacs-formfeed1.png)
+{% img emacs-formfeed1.png 50% %}
 
 The option `morekeywords` will add the keywords in the list of keywords recognized by
 Listings. In my example I added `lambda`, `models` and `forms` (I've been working a lot
@@ -94,7 +94,7 @@ So in the end this is how I insert a Python file:
 
 And this is the result:
 
-![](/img/2011-04/listings-model1.png)
+{% img listings-model1.png 90% %}
 
 I believe that reviewing my code on paper has save me hours of work and I find listings
 to be a very good option to print source code. I added a full LaTeX template [here][5].

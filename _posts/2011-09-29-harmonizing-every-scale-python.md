@@ -21,7 +21,7 @@ harmonizations for every possible scale and used [LilyPond][1] to typeset them.
 
 The harmonization for the major scale is pretty simple; you stack notes vertically following every other note in the scale:
 
-![](/img/2011-09/scale.png)
+{% img scale.png 80% %}
 
 In modern music it's fairly common to use non-traditional scales to generate new and
 interesting harmonies. For instance, in the example bellow I have a 7-note scale that is
@@ -31,7 +31,7 @@ thing about having the interval in which we pick notes be the same of the horizo
 notes (that is, having chords in thirds, fourths, and so on). This leads to very
 interesting harmonies.
 
-![](/img/2011-09/scales.png)
+{% img scales.png %}
 
 By the way, this is one of the reasons I got into programming in the first place; to
 generate material to use in my [compositions][4] (using Pascal back in the 90's, if you
@@ -147,11 +147,13 @@ filter_sets(cond)
 
 There are a few things that can be improved:
 
-  * Use some pitch spelling algorithm, like ([Meredith, 2003][11]) so we won't have chords like C, D#, G
-  * Have better functions for filtering. The function I'm using looks for consecutive intervals but it would be better to search for every interval in the Pitch Class Set.
-  * Handle octaves better in the LilyPond generation. Some notes would be better on a different octave:
+- Use some pitch spelling algorithm, like ([Meredith, 2003][11]) so we won't have chords like C, D#, G
+- Have better functions for filtering. The function I'm using looks for
+  consecutive intervals but it would be better to search for every interval in
+  the Pitch Class Set.
+- Handle octaves better in the LilyPond generation. Some notes would be better on a different octave:
 
-![](/img/2011-09/wrong-octave.png)
+{% img wrong-octave.png 15% %}
 
 This post only scratches the surface of all things we can do. For anything more
 complicated than that I'd use [music21][13], a nice and professional Python library for

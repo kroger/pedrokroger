@@ -258,7 +258,7 @@ One way to calculate square roots is by using Newton's method of successive
 approximations. We start with a guess _g_ for the square root of a number _x_
 and calculate a better guess by averaging _g_ with _x/g_, or:
 
-![](/img/2011-09/square-root.png)
+{% img square-root.png 30% %}
 
 The following procedure tests if the guess we have is good enough for the number
 _x_ (the radicand) we want to compute the square root. If not it'll keep trying

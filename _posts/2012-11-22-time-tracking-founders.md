@@ -86,7 +86,7 @@ minutes. You can configure Hamster to show a notification from time to time with
 name (the black thing in the screenshot). Some will find this annoying, but it helps me
 to keep focused. You can, of course, disable it.
 
-![](/img/2012-11/hamster-pokeme.png)
+{% img hamster-pokeme.png 80% %}
 
 ### Pause and Stop
 
@@ -104,7 +104,7 @@ There are a good number of online apps to track time (I have even used one for a
 
 One thing that I like about Hamster is that it shows some basic information on the main screen without the need to go to the separate reports window. In the following image we can see the total time for a category (Blog: 0.7h), the time for the current task (27 min), and the project name ("Time tracking for founders").
 
-![](/img/2012-11/hamster-full.png)
+{% img hamster-full.png 80% %}
 
 ## Manual vs. Automatic
 
@@ -116,7 +116,7 @@ Also, automatic time tracking tools are passive (duh! That's their main selling 
 
 After more than one year collecting data, I was able to analyze it and gather some interesting results. In the following image we can see the amount of time I worked in different categories (startup is green, day job is red) over six months. In the first weeks I was trying to work in too many different things at once, therefore not focusing on my startup. Also, we can see I used my vacation time to do some serious startup work. (The original image has the number of hours on the Y axis, but I'm not comfortable sharing this information.)
 
-![](/img/2012-11/tasks-no-label.png)
+{% img tasks-no-label.png %}
 
 I was able to find my most productive day, that is, the day I worked consistently more hours on my startup over a period of n months. Surprisingly, it was Monday:
 
@@ -145,11 +145,11 @@ Of course time is only one metric. Energy level is as import as time. If you hav
 
 Originally I was going to show the following graphic that has the average levels for each week:
 
-![](/img/2012-11/energy-by-hour.png)
+{% img energy-by-hour.png %}
 
 But once I reviewed the data, I realized the graphic above is useless. Look how wild my energy levels were during the two weeks:
 
-![](/img/2012-11/energy-level.png)
+{% img energy-level.png %}
 
 I collected this data one year ago and, frankly, I don't know what to make of it today. I'm still curious about energy levels, though. Maybe I'll do this experiment again.
 
@@ -159,12 +159,12 @@ The setup I have now it's not perfect but it's working for me. To collect the ti
 StopWatchMenu, a simple Mac app that I developed myself. It sits on the menubar and
 allows me to enter and pause tasks:
 
-![](/img/2012-11/stop-watch-menu.png)
+{% img stop-watch-menu.png 80% %}
 
 At the end of the day I enter the data in a simple Django app I hacked together (I run it
 locally). I use this app to generate reports and analyze the data I have:
 
-![](/img/2012-11/tracktime.png)
+{% img tracktime.png %}
 
 Naturally, I'd like to have one single app for all my time tracking purposes. I couldn't
 find one Mac application that works the way I want and generates the reports I care

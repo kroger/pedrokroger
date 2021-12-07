@@ -37,7 +37,7 @@ becomes easy once you realize that transposition is nothing more than the sum of
 and a transposition index (in the following example we use an integer notation for notes
 where C = 0, C# = 1, &#8230;, B = 11):
 
-![](/img/2012-07/transposition.png)
+{% img transposition.png 80% %}
 
 I wrote the book using the [reStructuredText][6] markup and I used [Sphinx][7] to
 generate the following formats: black & white pdf (for the printed version), color pdf,

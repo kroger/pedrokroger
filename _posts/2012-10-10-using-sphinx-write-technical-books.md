@@ -17,6 +17,10 @@ generate output more suitable for a book.
 
 <!--more-->
 
+<div class="alert alert-warning" role="alert">
+  This post is very old and probably out-of-date.
+</div>
+
 Please keep in mind that I came up with these techniques while writing my book. My main
 goal was to finish the book and to spend as little time as possible fiddling with my
 tools. Therefore, while some of these solutions are ok, others are kind of hacky. I'm
@@ -29,7 +33,7 @@ ones][5]. I created three themes: a minimalist html theme for previewing the boo
 was writing (called 'book'), an Epub theme ('epub2'), and a mobi theme ('mobi'). Here is
 a screenshot of the html theme:
 
-![](/img/2012-10/sphinx-html.png)
+{% img sphinx-html.png 90% %}
 
 Besides removing things from the base theme such as the sidebar, I used `@font-face` to
 define Anonymous Pro as the font for the code examples. I defined the following in my
@@ -41,7 +45,7 @@ bold-italic variants):
 font-family: AnonymousPro;
 font-weight: normal;
 font-style: normal;
-src: url(&quot;fonts/Anonymous Pro.ttf&quot;);
+src: url("fonts/Anonymous Pro.ttf");
 }
 ```
 
@@ -52,11 +56,11 @@ bodyfont = 'Palatino', serif
 headfont = Tahoma, Geneva, sans-serif;
 ```
 
+The ePub theme is very simple. Sphinx comes with a default theme for ePub, but
+it has some rough edges. For instance, it shows a copyright notice at the end of
+each chapter:
 
-The ePub theme is very simple. Sphinx comes with a default theme for ePub, but it has
-some rough edges. For instance, it shows a copyright notice at the end of each chapter:
-
-![](/img/2012-10/epub-copyright.png)
+{% img epub-copyright.png 80% %}
 
 Most Sphinx themes extends a basic theme. Since the html for the ePub file is very
 simple, I decided to create the `layout.html` file from scratch, without inheriting from
@@ -64,16 +68,16 @@ the base theme. As you can see [here][8], my Epub theme is super simple. In the 
 I use the same `@font-face` trick I used in the html theme. I also changed small things,
 like not showing bullets in the Table of Contents:
 
-![](/img/2012-10/epub-toc-original.png)
+{% img epub-toc-original.png 45% %}
 
-![](/img/2012-10/epub-toc-new.png)
+{% img epub-toc-new.png 45% %}
 
 In the following image you can see the difference between the out-of-the box ePub style
 and my style using pygments and AnonymousPro:
 
-![](/img/2012-10/epub-code-original.png)
+{% img epub-code-original.png 45% %}
 
-![](/img/2012-10/epub-code-new.png)
+{% img epub-code-new.png 45% %}
 
 The mobi theme is very similar to the epub2 style, except it doesn't use `@font-face` and
 the highlighted source code is black and white, since most kindle readers don't support
@@ -87,11 +91,11 @@ The builder `epub2` is a subclass of the built-in ePub builder. It disables visi
 and replaces the `span` tag with `samp` due to the bug I mentioned earlier. By default
 the built-in ePub builder will generate links like this:
 
-![](/img/2012-10/epub-link-default.png)
+{% img epub-link-default.png 80% %}
 
 but I prefer not to show the url:
 
-![](/img/2012-10/epub-link-new.png)
+{% img epub-link-new.png 80% %}
 
 You can see the full builder [here][15]. A much nicer solution would be to create a [new
 writer][16] by subclassing `writers.html.HTMLWriter` and have it emit `samp` directly
@@ -124,7 +128,7 @@ This is very simple and straightforward, but I also wanted an easy way to show e
 displaying the usage of a function and the result of its computation, like in the
 following image:
 
-![](/img/2012-10/note-name.png)
+{% img note-name.png 30% %}
 
 I could just type the code in the python REPL and copy and paste the result, but if the
 function changes I might need to update the examples manually, which could lead to some
@@ -252,7 +256,7 @@ SCREENOPTS= -D latex_elements.pointsize=12pt -D latex_elements.classoptions=,ope
 
 And these are the related targets that use those options:
 
-```make
+```
 pdf:
     $(SPHINXBUILD) -b latex $(SCREENOPTS) $(ALLSPHINXOPTS) $(BUILDDIR)/latex
     sed -i .bak -f process-latex $(BUILDDIR)/latex/$(LATEX-NAME).tex

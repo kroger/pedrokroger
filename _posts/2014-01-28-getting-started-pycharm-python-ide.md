@@ -17,6 +17,11 @@ not a zero sum game. I’ve been using Emacs for 15+ years and at one point I us
 read my [email][1], [browse the web][2], and [make coffee][3] (haven’t we all?). But
 today I find that I’m more productive by using the right tool for the right job.
 
+<div class="alert alert-warning" role="alert">
+  This article is very old and probably out-of-date. Please check Pycharm's documentation.
+</div>
+
+
 Powerful editors like Emacs and Vim are fantastic. I find it puzzling that some editors
 or IDEs perform basic operations such as search and replace clunkily while Vim and Emacs
 get it just right.
@@ -40,17 +45,17 @@ When you start PyCharm for the first time it asks what keymap and theme you want
 I don’t like its Emacs keymap, so I use the default Mac OS X keymap and customize the
 shortcuts I want:
 
-![](/img/2014-01/pycharm-initial-screen.png)
+{% img pycharm-initial-screen.png 80% %}
 
 If this is the first time you are using PyCharm and don’t have a configuration to import
 you may want to click on “Configure” in the welcome screen to set some basic things:
 
-![](/img/2014-01/pycharm-quick-start.png)
+{% img pycharm-quick-start.png 80% %}
 
 I like to show the line numbers and method separators (Editor→Appearance→Show method
 separators, Show line numbers):
 
-![](/img/2014-01/pycharm-config-appearance.png)
+{% img pycharm-config-appearance.png 80% %}
 
 Also, I like the [Solarized][10] theme. I install it by following the instructions and
 select it as the default theme in Editor→Colors & Fonts. Solarized light for IntelliJ has
@@ -59,13 +64,13 @@ crisper black), so I change it on Editor→Colors & Fonts→General. My advice i
 afraid to change the colors to something you like. You can export your settings in case
 you need to re-install PyCharm.
 
-![](/img/2014-01/pycharm-colors.png)
+{% img pycharm-colors.png 80% %}
 
 Compared to some IDEs, I find PyCharm visually clean, and if you want an even cleaner UI,
 you can hide the toolbar, the tool buttons, the navigation bar, and the status bar (on
 the View menu):
 
-![](/img/2014-01/pycharm-appearance2.png)
+{% img pycharm-appearance2.png 80% %}
 
 
 ## The Python Interpreter
@@ -75,7 +80,7 @@ File→Open Directory. PyCharm supports many types of Python projects such as Dj
 Flask out-of-the-box. For this post I’ll create a simple project to test the
 [pyquery][13] library (I’ll choose the “Empty project”).
 
-![](/img/2014-01/pycharm-new-project.png)
+{% img pycharm-new-project.png 80% %}
 
 You need to tell PyCharm what Python interpreter you want to use since it can use a
 different interpreter for each project. It will use this information to index all
@@ -83,11 +88,11 @@ available libraries. A good practice is to have one [virtualenv][15] for each pr
 You can either use an existing virtualenv or create a new one from PyCharm
 (Settings→Project Interpreter→Python Interpreters).
 
-![](/img/2014-01/pycharm-interpreters.png)
+{% img pycharm-interpreters.png 80% %}
 
 For this project I’ll create a new virtualenv and make it available to all projects:
 
-![](/img/2014-01/pycharm-new-virtualenv.png)
+{% img pycharm-new-virtualenv.png 80% %}
 
 You can quickly search, read the description, and install packages from PyCharm. This is
 nothing you couldn’t do on the terminal, but it’s very convenient to be able to search
@@ -97,14 +102,14 @@ Some packages may take a while to install, especially if they need to be compile
 PyCharm runs the installation in background and you can see what is happening by clicking
 on the status bar:
 
-![](/img/2014-01/pycharm-background-tasks.png)
+{% img pycharm-background-tasks.png 80% %}
 
-![](/img/2014-01/pycharm-background-tasks2.png)
+{% img pycharm-background-tasks2.png 80% %}
 
 As we can see, it installed not only `pyquery`, but its dependencies as well, such as
 lxml (as we would expect):
 
-![](/img/2014-01/pycharm-virtualenv-installed.png)
+{% img pycharm-virtualenv-installed.png 80% %}
 
 ## Shortcuts
 
@@ -117,7 +122,7 @@ changed Quick Documentation to use Option-Click. If you are a Vim user you may w
 try [IdeaVim][21], a Vim emulator plugin. I heard good things about it, but I didn’t have
 the chance to try it yet.
 
-![](/img/2014-01/pycharm-keymap.png)
+{% img pycharm-keymap.png 80% %}
 
 I use the Dvorak keyboard layout, and annoyingly, there’s a [bug][23] where the wrong
 keys are used. People have reported this problem with French Canadian and German layouts
@@ -128,7 +133,7 @@ PyCharm uses function keys such as F1 and F2 a lot. As you probably know, on the
 top keys work as “multimedia” keys by default and as function keys by pressing the Fn
 key. We can swap this behavior in System Preferences→Keyboard.
 
-![](/img/2014-01/pycharm-mac-options.png)
+{% img pycharm-mac-options.png 80% %}
 
 I like to be able control the sound volume and change the brightness without having to
 reach for the Fn key, but I also like to use the function keys while programming without
@@ -138,7 +143,7 @@ Palua to switch automatically when using a specific application. I use the multi
 keys for all applications (the default) and configure Palua to use the Function keys for
 Xcode and PyCharm.
 
-![](/img/2014-01/palua.png)
+{% img palua.png 80% %}
 
 
 ## External Editor
@@ -151,17 +156,17 @@ Go to Settings→External Tools, make sure “Open console” is unchecked and i
 to the Program, the Parameters (in this case we can get the full file name with
 `$FilePath$`) and the Working directory (`$ProjectFileDir$/$FileRelativeDir$/`).
 
-![](/img/2014-01/pycharm-external-tools.png)
+{% img pycharm-external-tools.png 80% %}
 
 You can assign it to a shortcut:
 
-![](/img/2014-01/pycharm-new-shortcut.png)
+{% img pycharm-new-shortcut.png 80% %}
 
-![](/img/2014-01/pycharm-select-keybinding.png)
+{% img pycharm-select-keybinding.png 80% %}
 
 And now it’s available from the menu as well.
 
-![](/img/2014-01/pycharm-external-tool-menu.png)
+{% img pycharm-external-tool-menu.png 80% %}
 
 ## Running Code and the REPL
 
@@ -174,12 +179,12 @@ the console, use the debugger, or use IPython on a terminal.
 Using `print` to display values is a useful and widely used technique, but it can lead to
 messy code if not used carefully.
 
-![](/img/2014-01/pycharm-runcode1.png)
+{% img pycharm-runcode1.png 80% %}
 
 We can run the code by clicking on the “play” button or with Control-R if the file is
 already selected to run.
 
-![](/img/2014-01/pycharm-run-file.png)
+{% img pycharm-run-file.png 80% %}
 
 If the file is not selected to run, with can select and run it with Control-Option-R or
 by right clicking and selecting from the context menu. PyCharm will remember your choice
@@ -194,16 +199,17 @@ PyCharm on Tools→Run Python Console (I’ve assigned it to Control-C Control-C
 will add the path of the current file to Python’s path. On the console you can import the
 functions you want to execute as usual.
 
-![](/img/2014-01/pycharm-runcode2.png)
+{% img pycharm-runcode2.png 80% %}
 
 Completion is available in the console as well:
 
-![](/img/2014-01/pycharm-runcode-completion.png)
+{% img pycharm-runcode-completion.png 80% %}
 
 Having imported the function, we can run it as usual. And we can toggle the console
 visibility easily with ⌘–4.
 
-![](/img/2014-01/pycharm-runcode-console.png)
+{% img pycharm-runcode-console.png 80% %}
+
 
 
 ### Execute Selection in Console
@@ -214,12 +220,14 @@ file. We can select the code we want to run (usually I just select the whole fil
 ⌘-A) and pick “Execute Selection in Console” from the context menu (or, even better, use
 the keyboard shortcut). [I omitted some menu items in the screenshot to make it shorter].
 
-![](/img/2014-01/pycharm-execute-selection.png)
+{% img pycharm-execute-selection.png 80% %}
+
 
 In the following example the `headlines` variable is available in the console since we
 have selected the whole `scratch` file to be executed in the console:
 
-![](/img/2014-01/pycharm-runcode-scratch.png)
+{% img pycharm-runcode-scratch.png 80% %}
+
 
 ### Macros
 
@@ -229,13 +237,15 @@ the operations as before (select the whole file, send the selection to console, 
 the console). As you can see, my macro has only four actions (I press the down arrow key
 to remove the selection):
 
-![](/img/2014-01/pycharm-list-macro.png)
+{% img pycharm-list-macro.png 80% %}
+
 
 After you record the macro it’s available in the Macros menu and you can assign a
 shortcut to it (I use Control-C Control-E, but for some reason PyCharm only shows the
 first half of shortcuts with two strokes).
 
-![](/img/2014-01/pycharm-macro-menu.png)
+{% img pycharm-macro-menu.png 80% %}
+
 
 ### Debugger
 
@@ -246,7 +256,8 @@ example I had to add an extra line (I used `print`, but I could have used `pass`
 wanted the debug to stop after setting the `headlines` variable. In real-life code this
 is seldom necessary.
 
-![](/img/2014-01/pycharm-runcode-debug.png)
+{% img pycharm-runcode-debug.png 80% %}
+
 
 
 ### Vanilla IPython
@@ -254,7 +265,8 @@ is seldom necessary.
 Finally, there’s nothing wrong with running an external terminal with IPython and using
 features such as `%run` and [autoreload][42].
 
-![](/img/2014-01/pycharm-runcode-ipython.png)
+{% img pycharm-runcode-ipython.png 80% %}
+
 
 ## Finding Commands
 
@@ -264,39 +276,46 @@ to search for any PyCharm command, including the ones not available from the men
 addicts will note this is somewhat similar to Emacs’ M-x). This is very useful and
 powerful and I use it all the time.
 
-![](/img/2014-01/pycharm-find-action.png)
+{% img pycharm-find-action.png 80% %}
+
 
 ## Code Completion
 
 Completion in PyCharm is top notch. By default PyCharm will suggest things while you are
 typing:
 
-![](/img/2014-01/pycharm-completion-default.png)
+{% img pycharm-completion-default.png 80% %}
+
 
 Since this feature can be a little power hungry, you can disable it by selecting
 File→Power Save Mode. You can still use completion by calling it explicitly with
 Control-Space.
 
-![](/img/2014-01/pycharm-power-save.png)
+{% img pycharm-power-save.png 80% %}
+
 
 When completing, you can narrow the suggestion list by typing a substring:
 
-![](/img/2014-01/pycharm-completion-simple.png)
+{% img pycharm-completion-simple.png 80% %}
+
 
 Or you can type only the first letters of CammelCaseClasses or
 function\_names\_with_underscores:
 
-![](/img/2014-01/pycharm-completion-simple2.png)
+{% img pycharm-completion-simple2.png 80% %}
+
 
 If you type Control-Space once PyCharm will try to list the most related items:
 
-![](/img/2014-01/pycharm-expand1.png)
+{% img pycharm-expand1.png 80% %}
+
 
 If you type Control-Space again it will list every name it knows. This can be
 overwhelming, but notice it is listing the function `name_of_mother` from the unimported
 `bar.py` file.
 
-![](/img/2014-01/pycharm-expand2.png)
+{% img pycharm-expand2.png 80% %}
+
 
 But often you just want to complete the name of a local variable in one of the opened
 buffers. This feature has been available in Emacs and Vim for ages and now it’s available
@@ -304,7 +323,8 @@ in PyCharm as well. The manual calls it [Hippie Completion][51], but the actual 
 name (that is, the name you will find in Find Action) is “Cyclic Expand Word” and in my
 tests it’s working even inside docstrings.
 
-![](/img/2014-01/pycharm-expand.gif)
+{% img pycharm-expand.gif 80% %}
+
 
 Completion may not work in some cases when a library doesn’t have [type hints][53]. [This
 StackOverflow][54] page suggests to set a breakpoint in pdb and list the possible
@@ -313,8 +333,7 @@ evaluate an expression at the breakpoint by clicking on the last icon in the deb
 toolbar (or using the appropriate keyboard shortcut). In this case I evaluated the
 expression “dir(r)”.
 
-![](/img/2014-01/pycharm-completion-debug.png)
-
+{% img pycharm-completion-debug.png 80% %}
 
 ## Access to Documentation
 
@@ -322,24 +341,24 @@ PyCharm has three ways to access documentation: Quick Definition, Quick Document
 External Documentation, and Parameter Info. You can access them from the View menu or
 from the respective shortcuts.
 
-![](/img/2014-01/pycharm-documentation1.png)
+{% img pycharm-documentation1.png 80% %}
 
 Quick definition will show the whole definition (duh!) of a symbol (class, method,
 function, etc), including the documentation, of course. It’s useful when you just want to
 take a quick look at the definition without jumping to it.
 
-![](/img/2014-01/pycharm-documentation2.png)
+{% img pycharm-documentation2.png 80% %}
 
 Quick documentation will show the symbol’s documentation and signature.
 
-![](/img/2014-01/pycharm-documentation3.png)
+{% img pycharm-documentation3.png 80% %}
 
 Finally, External Documentation, and Parameter Info are pretty straightforward. The first
 opens the documentation in the default browser and the second shows the parameter
 information for a function or method (useful to quick check the name of keyword
 arguments, for instance).
 
-![](/img/2014-01/pycharm-documentation4.png)
+{% img pycharm-documentation4.png 80% %}
 
 The external documentation works out-of-the-box with Python (of course), PyQt4, PySide,
 gtk, wx, numpy, scipy, and kivy and you can add the path for external documentation in
@@ -352,7 +371,7 @@ you have too many spaces or blank lines, if you are using underscores instead of
 CamelCase for classes names, and so on. If you want, you can configure PyCharm to [run
 pylint as an external tool][60], as well.
 
-![](/img/2014-01/pycharm-pep8.png)
+{% img pycharm-pep8.png 80% %}
 
 ## Navigation Commands
 
@@ -366,17 +385,17 @@ presented with a dialog where you can type a substring, include items outside yo
 project, and filter the results if necessary. Go to the Navigate menu or use the
 appropriate keyboard shortcut:
 
-![](/img/2014-01/pycharm-navigate.png)
+{% img pycharm-navigate.png 80% %}
 
 This is a typical dialog to navigate to a Class definition:
 
-![](/img/2014-01/pycharm-jump-class.png)
+{% img pycharm-jump-class.png 80% %}
 
 You can enter part of the name, including the file extension. For instance, if you want
 to open a JavaScript in a Django project but don’t remember its name, you can search for
 “.js”.
 
-![](/img/2014-01/pycharm-jump-file.png)
+{% img pycharm-jump-file.png 80% %}
 
 These features allow us to navigate the source code very quickly. Let’s suppose we are
 studying the Django source code and we want to see how the function `render` is
@@ -385,13 +404,13 @@ implemented. We don’t know where it’s defined, so we go to Navigate→Symbol
 have hidden the navigation bar we can show it quickly with Navigate→Jump to the
 Navigation Bar (⌘-↑) and see where the file is located (django→django→shortcuts.py):
 
-![](/img/2014-01/pycharm-find-symbol.gif)
+{% img pycharm-find-symbol.gif 80% %}
 
 Sometimes it’s useful to filter the completion results to take out things you are not
 interested. In the following example I remove the results related to JavaScript to have a
 much cleaner completion list:
 
-![](/img/2014-01/pycharm-goto-symbol.gif)
+{% img pycharm-goto-symbol.gif 80% %}
 
 PyCharm allows you to fold blocks such as classes, methods, and functions, but you can
 create your own [foldable regions][67]. This is useful when it makes sense to group
@@ -400,7 +419,7 @@ allowing us to focus on particular regions of the code. You can list all regions
 file by going to Navigate→Custom Region or using the appropriate keyboard shortcut. Sadly
 there’s no way to list all regions in a project.
 
-![](/img/2014-01/pycharm-jump-regions.png)
+{% img pycharm-jump-regions.png 80% %}
 
 ## Unit tests
 
@@ -408,19 +427,20 @@ Before we can run a test we need to add a new Run/Debug configuration. We go to 
 Configurations and click on the plus button on the top left corner. Then, we select
 “Python tests” and the test runner. For this example I’ll use Unittests:
 
-![](/img/2014-01/pycharm-new-test-config.png)
+{% img pycharm-new-test-config.png 80% %}
 
 Finally, we need to add the folder where the tests are and pick the right Python
 interpreter:
 
-![](/img/2014-01/pycharm-tests.png)
+{% img pycharm-tests.png 80% %}
 
 Now we can run our tests just like we run code: by clicking in the toolbar or by
 selecting Run→Run (Control-⌥-R). This will open a dialog where you can choose what you
 want to run (you may have other things to run). You can run all tests or only the test on
 the cursor.
 
-![](/img/2014-01/pycharm-run-tests.png)
+{% img pycharm-run-tests.png 80% %}
+
 
 After you run the tests, PyCharm will remember your last choice, so you can repeat it
 with Control-R. This is useful if you are fixing one particular test case and want to run
@@ -428,21 +448,19 @@ it multiple times without running the other tests. You don’t need to have the 
 the test file you want to run; you can run the tests from any file. You can go from the
 code to its test by selecting Navigate→Test (or appropriate hotkeys).
 
-![](/img/2014-01/pycharm-run-all-tests.png)
+{% img pycharm-run-all-tests.png 80% %}
 
 
 ## Dealing with multiple files
 
 As you noticed, PyCharm uses one tab per file:
 
-![](/img/2014-01/pycharm-tabs.png)
+{% img pycharm-tabs.png 80% %}
 
-
-To switch to tabs we can use the commands Select Next Tab and Select Previous Tab. They
-are bound to Control-→ and Control-← by default, but OS X uses these keys, so I rebind
-them to Control-⌘-N
-
-and Control-⌘-P (I use the same shortcuts to switch tabs in the Terminal).
+To switch to tabs we can use the commands Select Next Tab and Select Previous
+Tab. They are bound to Control-→ and Control-← by default, but OS X uses these
+keys, so I rebind them to Control-⌘-N and Control-⌘-P (I use the same shortcuts
+to switch tabs in the Terminal).
 
 One more direct approach to go to a tab is to use Navigate→File as we’ve seen, or
 View→Recent Files (⌘-E) and View→Recently Changed Files (⇧-⌘-E). These last two commands
@@ -450,14 +468,15 @@ will present a list of files where you can click on type a substring to narrow t
 selection. In the following example I only had to type “⌘-E”, “s”, “enter” to go to the
 tab with the `scratch.py` file:
 
-![](/img/2014-01/pycharm-switch-tab.gif)
+{% img pycharm-switch-tab.gif 80% %}
+
 
 ## Split Windows
 
 PyCharm has support for split windows. It’s not as advanced as in Emacs and Vim but it’s
 useful enough.
 
-![](/img/2014-01/pycharm-split-windows.png)
+{% img pycharm-split-windows.png 80% %}
 
 No command to deal with split windows have shortcuts assigned to them by default, so
 you’ll have to do it yourself. These are the keys that I use:
@@ -470,7 +489,7 @@ you’ll have to do it yourself. These are the keys that I use:
   * Goto Previous Splitter, Control-C Control-P
   * Move to Opposite Group, Control-C Control-M
 
-![](/img/2014-01/pycharm-split-shortcuts.png)
+{% img pycharm-split-shortcuts.png 80% %}
 
 Move to Opposite Group will move a tab to another group, but it only works if we have
 only two panes. In this case it’s just easier to drag and drop the tab to the desired
