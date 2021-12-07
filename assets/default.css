@@ -76,12 +76,6 @@ h2.blog-post-title {
   }
 }
 
-/* Use fixed width for images in posts */
-p img {
-  width: 80%;
-  height: auto;
-}
-
 li.toc-h2 {
   /* text-indent: -20px;
      margin-left: 20px; */
