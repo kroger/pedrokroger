@@ -1,5 +1,5 @@
 run:
-	bundle exec jekyll serve
+	bundle exec jekyll serve --draft
 
 build:
 	bundle exec jekyll build
