@@ -85,3 +85,8 @@ li.toc-h2 a {
   color: #727272;
   text-decoration: none;
 }
+
+img {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
