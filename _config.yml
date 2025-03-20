@@ -8,6 +8,10 @@ url: "https://pedrokroger.net"
 twitter_username: pedrokroger1
 github_username:  kroger
 
+url: "https://pedrokroger.net"
+# Necessary if runing in kroger.github.io/pedrokroger
+#baseurl: "/pedrokroger.net"
+
 kramdown:
   input: GFM
 
